@@ -1,0 +1,97 @@
+.search-container {
+  background-color: white;
+  width: 250px;
+  padding: 0 13px;
+  margin: 5px;
+  border-radius: 25px;
+  position: relative;
+}
+.search-input {
+  background-color: transparent;
+  padding: 15px 25px;
+  position: relative;
+  font-size: 12px;
+  outline: none;
+}
+.search-btn {
+  color: white;
+  border-radius: 25px;
+  padding: 13px 25px;
+  /* background: linear-gradient(#916e96, #7172a4); */
+  position: absolute;
+  z-index: 100;
+  left: 180px;
+  font-size: 15px;
+  &:hover {
+    width: 40%;
+    opacity: 0.96;
+  }
+}
+
+/* Modalın bütün ekranı örtməsi üçün overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  overflow: hidden;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 100%;
+  height: 70%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1001;
+}
+
+.modal-close-button {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  color: white;
+}
+
+.modal-close-button:hover {
+  color: red;
+}
+.header-heading {
+  color: white;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+  font-size: 28px;
+  font-weight: 600;
+}
+.sign-btn {
+  color: white;
+  opacity: 0.7;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.modal-input {
+  border: 1px solid rgb(119, 113, 113);
+  border-radius: 15px;
+  padding: 10px 25px;
+  margin: 15px 0;
+  margin-left: 5px;
+}
+.modal-err {
+  /* margin-bottom: 2px; */
+  color: rgb(180, 6, 6);
+  font-weight: 500;
+}
