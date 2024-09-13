@@ -44,9 +44,8 @@ function App() {
       <div className="">
         <Header onInput={handleInput} />
         <Center />
-        {/* {genMovies.length > 0 &&  />} */}
         {searchTerm ? (
-          <div className="">
+          <div className="grid grid-cols-3 gap-20px max-[650px]:flex max-[768px]:gap-x-96 grid md:gap-x-64 max-[650px]:items-center grid-cols-3 gap-x-10 lg:gap-x-32 max-[650px]:flex-col">
             {genMovies.map((m) => (
               <MovieCard key={m.key} img={m.Poster} title={m.Title} />
             ))}
