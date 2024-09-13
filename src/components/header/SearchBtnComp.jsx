@@ -16,8 +16,9 @@ function SearchBtnComp({ icons, inputTxt, backgroundColor,onInput }) {
     
   }
   return (
-    <div>
-      <div>
+    <div >
+    <div className=""> 
+      
         <div className="search-container">
           {icons}
           <input

@@ -13,15 +13,15 @@ function Header({onInput}) {
   const Close = () => setShowLog(false);
 
   return (
-    <div className="header flex gap-x-96	items-center ">
+    <div className="header   flex gap-x-96 lg:justify-between	items-center  ">
       <h3 className="header-heading">Moodvies</h3>
 
-      <div className="header-left flex gap-x-16  ">
-        <div>
+      <div className=" header-left flex gap-x-16  ">
+        <div >
           <SearchBtn onInput={onInput} />
         </div>
 
-        <div className="flex gap-8 header-auth">
+        <div className="flex gap-8 header-auth ">
           <button className="sign-btn" onClick={Open}>
           
             Login

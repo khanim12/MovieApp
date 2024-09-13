@@ -19,18 +19,25 @@ console.log(types);
 function MovieList({ genMovies }) {
   console.log(genMovies);
   return (
-    <div>
-      <div className="grid grid-cols-3 gap-16 text-white items-center">
+    <div className="w-screen">
+      <div className="movi max-[650px]:flex  flex max-[768px]:gap-x-96 grid md:gap-x-64 max-[650px]:items-center grid-cols-3 gap-x-10 ">
+        {/* <div className="grid grid-cols-3 gap-16 text-white items-center lg:gap-x-32"> */}
+
         {types.map((t) => {
           return (
-            <div className="flex justify-between " key={t.id}>
-              <h2 className="capitalize text-2xl font-bold">{t.type}</h2>
-              <button className="text-sm movie-btn">Show More</button>
+            <div
+              className="flex max-[650px]:hidden mov-head justify-between items-center text-white md:gap-x-16  mr-8 "
+              key={t.id}
+            >
+              <h2 className="capitalize max-[650px]:text-base text-2xl font-bold">
+                {t.type}
+              </h2>
+              <button className="text-sm movie-btn mr-8">Show More</button>
             </div>
           );
         })}
-      </div>
-      <div className="grid grid-rows-4 grid-cols-3 gap-x-10		">
+        {/* </div> */}
+        {/* <div 	 lg:gap-x-96	"> */}
         {genMovies.map((m) => (
           <MovieCard
             key={m.imdbID}
@@ -39,6 +46,7 @@ function MovieList({ genMovies }) {
             img={m.Poster}
           />
         ))}
+        {/* </div> */}
       </div>
     </div>
   );

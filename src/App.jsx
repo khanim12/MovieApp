@@ -46,7 +46,7 @@ function App() {
         <Center />
         {/* {genMovies.length > 0 &&  />} */}
         {searchTerm ? (
-          <div className="grid grid-cols-3 gap-16">
+          <div className="">
             {genMovies.map((m) => (
               <MovieCard key={m.key} img={m.Poster} title={m.Title} />
             ))}

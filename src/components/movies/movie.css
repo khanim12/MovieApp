@@ -1,5 +1,5 @@
 .movieImg {
-  width: 100%;
+  width: 200px;
   height: 100%;
   border-radius: 10px;
   background-position: center;
@@ -7,19 +7,18 @@
   object-fit: cover;
 }
 .image {
-  width: 150px;
+  width: 100%;
   height: 100vh;
   margin-right: 10px;
 }
 .mov-card {
-  /* width: 80%; */
+  width: 100%;
 }
 .item-card {
-  /* width: 100%; */
+  width: 100%;
   height: 150px;
   border-radius: 15px;
   margin: 25px 0;
-
   position: relative;
   z-index: 4;
   background: linear-gradient(rgb(124, 107, 107), rgb(8, 8, 8));
@@ -37,7 +36,6 @@
   background: linear-gradient(black, transparent);
   opacity: 0.1;
 }
-
 .movie-btn {
   padding: 15px 25px;
   border: 1px solid white;
