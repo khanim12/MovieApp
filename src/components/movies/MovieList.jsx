@@ -20,13 +20,13 @@ function MovieList({ genMovies }) {
   console.log(genMovies);
   return (
     <div className="w-screen">
-      <div className="movi max-[650px]:flex  flex max-[768px]:gap-x-96 grid md:gap-x-64 max-[650px]:items-center grid-cols-3 gap-x-10 ">
+      <div className="movi max-[650px]:flex max-[768px]:gap-x-96 grid md:gap-x-64 max-[650px]:items-center grid-cols-3 gap-x-10 lg:gap-x-32 ">
         {/* <div className="grid grid-cols-3 gap-16 text-white items-center lg:gap-x-32"> */}
 
         {types.map((t) => {
           return (
             <div
-              className="flex max-[650px]:hidden mov-head justify-between items-center text-white md:gap-x-16  mr-8 "
+              className="flex max-[650px]:hidden mov-head items-center text-white md:gap-x-16   lg:gap-x-16 "
               key={t.id}
             >
               <h2 className="capitalize max-[650px]:text-base text-2xl font-bold">

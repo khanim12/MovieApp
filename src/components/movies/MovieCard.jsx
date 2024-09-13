@@ -8,7 +8,7 @@ import React from "react";
 
 function MovieCard({ img, key, desc, title }) {
   return (
-    <div key={key} className="mov-card  max-[650px]:w-[350px] max-[650px]:mx-6     md:w-[320px] max-[768px]:w-[350px]   ">
+    <div key={key} className="mov-card  max-[650px]:w-[350px] max-[650px]:mx-6 md:w-[320px] max-[768px]:w-[350px]   ">
       <div className=" flex items-start item-card">
         <div
           className="overlay"
