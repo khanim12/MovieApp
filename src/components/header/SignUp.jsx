@@ -41,14 +41,14 @@ function SignUp({ isClose }) {
           X
         </button>
         <form onSubmit={handleSubmit}>
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-2 justify-between">
             <label htmlFor="username">
               First Name:
               <input
                 name="name"
                 value={values.name}
                 onChange={handleChange}
-                className="modal-input"
+                className="modal-input w-3/4 ml-12"
                 id="username"
                 type="text"
                 placeholder="Enter firstname"
@@ -62,7 +62,7 @@ function SignUp({ isClose }) {
                 id="sName"
                 value={values.lastName}
                 onChange={handleChange}
-                className="modal-input"
+                className="modal-input w-3/4 ml-12"
                 type="text"
                 placeholder="Enter lastName"
               />
@@ -76,7 +76,7 @@ function SignUp({ isClose }) {
                 id="email"
                 value={values.email}
                 onChange={handleChange}
-                className="modal-input"
+                className="modal-input w-3/4 ml-12"
                 type="email"
                 placeholder="Enter email address"
               />
@@ -88,7 +88,7 @@ function SignUp({ isClose }) {
                 id="password"
                 value={values.password}
                 onChange={handleChange}
-                className="modal-input"
+                className="modal-input w-3/4 ml-12"
                 type="password"
                 placeholder="Enter password"
               />
@@ -97,13 +97,13 @@ function SignUp({ isClose }) {
               )}
             </label>
             <label htmlFor="repas">
-              Confirm Password
+              Confirm Password:
               <input
                 id="rePassword"
                 name="rePassword"
                 value={values.rePassword}
                 onChange={handleChange}
-                className="modal-input"
+                className="modal-input w-3/4 ml-2"
                 type="password"
                 placeholder="Enter password again"
               />

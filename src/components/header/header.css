@@ -42,10 +42,10 @@
 
 .modal-content {
   background-color: white;
-  padding: 20px;
+  padding: 5px;
   overflow: hidden;
   border-radius: 8px;
-  max-width: 500px;
+  max-width: 600px;
   width: 100%;
   text-align: right;
   height: 70%;

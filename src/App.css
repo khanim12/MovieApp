@@ -2,8 +2,8 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  height: 100vh;
-  background: linear-gradient(to bottom, #392c34, #804a4a);
+  background-image: linear-gradient(#392c34, #804a4a);
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
@@ -60,4 +60,8 @@ body {
   .mov-card {
     width: 500px;
   }
+}
+
+.search{
+  height: 100vh;
 }
